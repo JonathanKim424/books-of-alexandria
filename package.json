@@ -1,5 +1,5 @@
 {
-  "name": "kongo-on-the-shelves",
+  "name": "books-of-alexandria",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JonathanKim424/kongo-on-the-shelves.git"
+    "url": "git+https://github.com/JonathanKim424/books-of-alexandria.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JonathanKim424/kongo-on-the-shelves/issues"
+    "url": "https://github.com/JonathanKim424/books-of-alexandria/issues"
   },
-  "homepage": "https://github.com/JonathanKim424/kongo-on-the-shelves#readme",
+  "homepage": "https://github.com/JonathanKim424/books-of-alexandria#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.0",
