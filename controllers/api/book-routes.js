@@ -1,16 +1,16 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Book, Genre } = require('../../models');
+const { Book } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     Book.findAll({
-        include: [
-            {
-                model: Genre,
-                attributes: ['genres']
-            }
-        ]
+        // include: [
+        //     {
+        //         model: Genre,
+        //         attributes: ['genres']
+        //     }
+        // ]
     }).then(dbBookData => res.json(dbBookData))
     .catch(err => {
         console.log(err);
@@ -20,12 +20,12 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     Book.findOne({
-        include: [
-            {
-                model: Genre,
-                attributes: ['genres']
-            }
-        ]
+        // include: [
+        //     {
+        //         model: Genre,
+        //         attributes: ['genres']
+        //     }
+        // ]
     })
     .then(dbBookData => {
         if (!dbBookData) {
@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', /*withAuth,*/ (req, res) => {
     if (req.session) {
         Book.create({
             book_title: req.body.book_title,
@@ -58,7 +58,7 @@ router.post('/', withAuth, (req, res) => {
     }
 });
 
-router.put('/:id', withAuth, (req, res) => {
+router.put('/:id', /*withAuth,*/ (req, res) => {
     Book.update(
         {
             price: req.body.price,
@@ -83,7 +83,7 @@ router.put('/:id', withAuth, (req, res) => {
     });
 });
 
-router.delete('/:id', withAuth, (req, res) => {
+router.delete('/:id', /*withAuth,*/ (req, res) => {
     Book.destroy({
         where: {
             id: req.params.id
