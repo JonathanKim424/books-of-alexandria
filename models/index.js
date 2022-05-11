@@ -2,8 +2,8 @@ const Book = require('./Book');
 const Employee = require('./Employee');
 const Genre = require ('./Genre');
 
-Book.hasOne(Genre, {
-    foreignKey: 'genre_id'
+Book.belgonsTo(Genre, {
+    foreignKey: 'book_id'
 });
 
 Genre.hasMany(Book, {
