@@ -2,7 +2,7 @@ const Book = require('./Book');
 const Employee = require('./Employee');
 const Genre = require ('./Genre');
 
-Book.belgonsTo(Genre, {
+Book.belongsTo(Genre, {
     foreignKey: 'book_id'
 });
 
