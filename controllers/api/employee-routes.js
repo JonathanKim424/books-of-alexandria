@@ -36,13 +36,13 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     Employee.create({
         employee_name: req.body.employee_name,
-        username: req.body.username,
+        email: req.body.email,
         password: req.body.password
     })
     .then(dbEmployeeData => {
         req.session.save(() => {
             req.session.employee_id = dbEmployeeData.id;
-            req.session.username = dbEmployeeData.username;
+            req.session.email = dbEmployeeData.email;
             req.session.loggedIn = true;
             res.json(dbEmployeeData);
         });
@@ -56,7 +56,7 @@ router.post('/', (req, res) => {
 router.post('/login', (req, res) => {
     Employee.findOne({
         where: {
-            username: req.body.username
+            email: req.body.email
         }
     })
     .then(dbEmployeeData => {
@@ -71,7 +71,7 @@ router.post('/login', (req, res) => {
         }
         req.session.save(() => {
             req.session.employee_id = dbEmployeeData.id;
-            req.session.username = dbEmployeeData.username;
+            req.session.email = dbEmployeeData.email;
             req.session.loggedIn = true;
             res.json({ employee: dbEmployeeData, message: 'You are now logged in!' })
         });

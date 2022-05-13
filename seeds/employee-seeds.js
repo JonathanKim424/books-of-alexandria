@@ -3,22 +3,22 @@ const { Employee } = require('../models');
 const employeeData = [
     {
         employee_name: 'Rufaro Mendes',
-        username: 'rufaro',
+        email: 'rufaro@gmail.com',
         password: 'password1234'
     },
     {
         employee_name: 'Tomiko Lyons',
-        username: 'tomiko',
+        email: 'tomiko@gmail.com',
         password: 'password1234'
     },
     {
         employee_name: 'Ruslan Gladwin',
-        username: 'ruslan',
+        email: 'ruslan@gmail.com',
         password: 'password1234'
     },
     {
         employee_name: 'Helga Hartley',
-        username: 'helga',
+        email: 'helga@gmail.com',
         password: 'password1234'
     }
 ];

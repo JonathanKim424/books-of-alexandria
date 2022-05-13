@@ -22,7 +22,7 @@ Employee.init(
                 len: [1]
             }
         },
-        username: {
+        email: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {

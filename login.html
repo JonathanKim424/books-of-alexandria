@@ -58,7 +58,7 @@
                 class="img-fluid" alt="Sample image" width="400px";>
             </div>
             <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-              <form>
+              <form class="login-form">
                 <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                   <p class="lead fw-normal mb-0 me-3">Sign in with</p>
                   <button type="button" class="btn btn-primary btn-floating mx-1">
@@ -80,16 +80,16 @@
       
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                  <input type="email" id="email-login" class="form-control form-control-lg"
                     placeholder="Enter a valid email address" />
-                  <label class="form-label" for="form3Example3">Email address</label>
+                  <label class="form-label" for="email-login">Email address</label>
                 </div>
       
                 <!-- Password input -->
                 <div class="form-outline mb-3">
-                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                  <input type="password" id="password-login" class="form-control form-control-lg"
                     placeholder="Enter password" />
-                  <label class="form-label" for="form3Example4">Password</label>
+                  <label class="form-label" for="password-login">Password</label>
                 </div>
       
                 <div class="d-flex justify-content-between align-items-center">
@@ -104,7 +104,7 @@
                 </div>
       
                 <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="button" class="btn btn-lg"
+                  <button type="submit" class="btn btn-lg"
                     style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Login</button>
                   <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
                       class="link-danger">Register</a></p>
@@ -140,5 +140,8 @@
           <!-- Right -->
         </div>
       </section>
+
+      <!-- JavaScript Import for Login (Will need to be updated when changing to handlebar) -->
+      <script src="./public/javascript/login.js"></script>
 </body>
 </html>
