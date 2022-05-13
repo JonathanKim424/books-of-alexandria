@@ -1,8 +1,3 @@
 .DS_Store
-<<<<<<< HEAD
 .env
 node_modules
-=======
-node_modules
-.env
->>>>>>> feature/genres
