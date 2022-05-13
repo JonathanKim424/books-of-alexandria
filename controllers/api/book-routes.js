@@ -1,16 +1,16 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Book } = require('../../models');
+const { Book, Genre } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     Book.findAll({
-        // include: [
-        //     {
-        //         model: Genre,
-        //         attributes: ['genres']
-        //     }
-        // ]
+        include: [
+            {
+                model: Genre,
+                attributes: ['genre_name']
+            }
+        ]
     }).then(dbBookData => res.json(dbBookData))
     .catch(err => {
         console.log(err);
@@ -20,12 +20,12 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     Book.findOne({
-        // include: [
-        //     {
-        //         model: Genre,
-        //         attributes: ['genres']
-        //     }
-        // ]
+        include: [
+            {
+                model: Genre,
+                attributes: ['genre_name']
+            }
+        ]
     })
     .then(dbBookData => {
         if (!dbBookData) {
