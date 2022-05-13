@@ -61,7 +61,7 @@ router.post('/login', (req, res) => {
     })
     .then(dbEmployeeData => {
         if (!dbEmployeeData) {
-            res.status(400).json({ message: 'No user with that username!' });
+            res.status(400).json({ message: 'No employee with that email!' });
             return;
         }
         const validPassword = dbEmployeeData.checkPassword(req.body.password);

@@ -15,8 +15,11 @@ async function loginFormHandler(event) {
         });
         if (response.ok) {
             console.log('Login Successful!!');
+            alert("Login Successful!");
         } else {
-            alert(response.statusText);
+            response.json().then(data => {
+                alert(data.message);
+            });
         }
     }
 }
