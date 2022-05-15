@@ -4,7 +4,7 @@ const { Book, Genre } = require('../models');
 
 router.get('/', (req, res) => {
     Book.findAll({
-        attributes: ['id', 'book_title', 'genre_id', 'author', 'price', 'stock'],
+        attributes: ['id', 'book_title', 'genre_id', 'author', 'price', 'stock', 'book_img'],
         include: [
             {
                 model: Genre,
@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
     })
     .then(dbBookData => {
         const books = dbBookData.map(book => book.get({ plain: true }));
-        console.log(books)
         res.render('inventory', { books/*, loggedIn: true*/ });
     })
     .catch(err => {

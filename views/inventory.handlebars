@@ -28,13 +28,13 @@
     
         <div class="col-sm">
             <div class="card" style="width: 18rem">
-                <img src="" alt="image of book" class="card-img-top">
+                <img src="{{this.book_img}}" alt="image of book" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">{{this.book_title}}</h5>
-                    <p class="card-text">Genre:{{this.genre.genre_name}}</p>
-                    <p class="card-text">Author:{{this.author}}</p>
-                    <p class="card-text">Price:{{this.price}}</p>
-                    <p class="card-text">Stock:{{this.stock}}</p>
+                    <p class="card-text">Genre: {{this.genre.genre_name}}</p>
+                    <p class="card-text">Author: {{this.author}}</p>
+                    <p class="card-text">Price: ${{this.price}}</p>
+                    <p class="card-text">Stock: {{this.stock}}</p>
                     <a href="#"  class="btn btn-primary">PURCHASE</a>
                 </div>
             </div>

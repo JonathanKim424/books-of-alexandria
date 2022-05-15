@@ -51,6 +51,10 @@ Book.init(
             validate: {
                 isNumeric: true
             }
+        },
+        book_img: {
+            type: DataTypes.STRING,
+            allowNull: true
         }
     },
     {
