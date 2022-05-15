@@ -24,16 +24,17 @@
 <!-- book cards -->
 <div class="container">
     <div class="row">
-        {{#each book.card}}
+        {{#each books}}
+    
         <div class="col-sm">
             <div class="card" style="width: 18rem">
                 <img src="" alt="image of book" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">{{book.book_title}}</h5>
-                    <p class="card-text">Genre:{{book.genre_id}}</p>
-                    <p class="card-text">Author:{{book.author}}</p>
-                    <p class="card-text">Price:{{book.price}}</p>
-                    <p class="card-text">Stock:{{book.stock}}</p>
+                    <h5 class="card-title">{{this.book_title}}</h5>
+                    <p class="card-text">Genre:{{this.genre.genre_name}}</p>
+                    <p class="card-text">Author:{{this.author}}</p>
+                    <p class="card-text">Price:{{this.price}}</p>
+                    <p class="card-text">Stock:{{this.stock}}</p>
                     <a href="#"  class="btn btn-primary">PURCHASE</a>
                 </div>
             </div>
