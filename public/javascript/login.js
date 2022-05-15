@@ -14,8 +14,8 @@ async function loginFormHandler(event) {
             headers: { 'Content-Type': 'application/json' }
         });
         if (response.ok) {
-            console.log('Login Successful!!');
             alert("Login Successful!");
+            document.location.replace('/');
         } else {
             response.json().then(data => {
                 alert(data.message);
