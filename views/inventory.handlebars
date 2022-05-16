@@ -22,24 +22,30 @@
 </section>
 
 <!-- book cards -->
-<div class="container">
-    <div class="row">
-        {{#each book.card}}
-        <div class="col-sm">
-            <div class="card" style="width: 18rem">
-                <img src="" alt="image of book" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">{{book.book_title}}</h5>
-                    <p class="card-text">Genre:{{book.genre_id}}</p>
-                    <p class="card-text">Author:{{book.author}}</p>
-                    <p class="card-text">Price:{{book.price}}</p>
-                    <p class="card-text">Stock:{{book.stock}}</p>
-                    <a href="#"  class="btn btn-primary">PURCHASE</a>
-                </div>
-            </div>
+{{#each books}}
+<div class="infoCard rgb">
+    
+    <div id="bookImage" class="infoCard-image">
+        <img src="{{this.book_img}}" class="infoCard-image" alt="image of book">
+    </div>
+    <div class="cardText">
+        <h2>Book Title: {{this.book_title}}</h2>
+        <p>Author: {{this.author}}</p>
+    </div>
+    <div class="infoCard-stats">
+        <div class="infoStat">
+            <div class="infoValue">{{this.gere.genre_name}}</div>
+            <div class="infoType">Genre</div>
         </div>
-        {{/each}}
+        <div class="infoStat infoBorder">
+            <div class="infoValue">{{this.price}}</div>
+            <div class="infoType">Price:</div>
+        </div>
+        <div class="infoStat">
+            <div class="infoValue">{{this.stock}}</div>
+            <div class="infoType">Inventory</div>
+        </div>
     </div>
 </div>
+{{/each}}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-

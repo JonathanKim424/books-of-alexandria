@@ -1,0 +1,118 @@
+<div class="container bcontent center mt-5">
+         <h2>
+             Edit Inventory
+         </h2>
+         <button type="button" href="" class="btn btn-primary btn-lg btn-block p-3 m-2">Add Book to Inventory</button>
+         <button type="button" href="" class="btn btn-primary btn-lg btn-block p-3 m-2">Delete Book from Inventory by ID</button>
+         <button type="button" href="" class="btn btn-primary btn-lg btn-block p-3 m-2">Edit Book in Inventory</button>
+         <button type="button" href="#sales" class="btn btn-primary btn-lg btn-block p-3 m-2">Place Book on Sale</button>
+     </div>
+
+     {{!-- <!-- add book to inventory form --> --}}
+     <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <form class="addBook-form">
+        <h1 class="text-center">Add Book To Inventory</h1>
+        {{!-- <!-- add book title --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="text" id="" class="form-control form-control-lg"
+            placeholder="Enter Title of Book" />
+        </div>
+        {{!-- <!-- add author --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="text" id="" class="form-control form-control-lg"
+            placeholder="Enter Author" />
+        </div>
+        {{!-- <!-- add isbn --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="text" id="" class="form-control form-control-lg"
+            placeholder="isbn" />
+        </div>
+        {{!-- <!-- add genre id --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Genre Id" />
+        </div>
+        {{!-- <!-- add price --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Price" />
+        </div>
+        {{!-- <!-- Add book image --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="file" id="" class="form-control form-control-lg"
+            placeholder="Enter image file path" />
+        </div>
+        {{!-- <!-- submit button --> --}}
+        <div class="text-center text-lg-start mt-4 pt-2 pb-2">
+          <button type="submit" class="btn btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    {{!-- <!-- delete book by id --> --}}
+    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <h1 class="text-center">Delete From Inventory</h1>
+      <form class="delete-form">
+        {{!-- <!-- delete by id --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Id of Book to Delete from Inventory" />
+        </div>
+        {{!-- <!-- submit button --> --}}
+        <div class="text-center text-lg-start mb-2 p-2">
+          <button type="submit" class="btn btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    {{!-- <!-- edit inventory by id --> --}}
+    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <h1 class="text-center">Edit Inventory</h1>
+      <form class="edit-form">
+        {{!-- <!-- get by id --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Id of Book to Update Inventory" />
+        </div>
+        {{!-- <!-- updte inventory --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Update Inventory" />
+        </div>
+        {{!-- <!-- submit button --> --}}
+        <div class="text-center text-lg-start mb-2 p-2">
+          <button type="submit" class="btn btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    {{!-- <!-- place book on sale --> --}}
+    <div id="sales" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <h1 class="text-center">Place On Sale</h1>
+      <form class="sales-form">
+        {{!-- <!-- get by id --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Id of Book to Place on Sale" />
+        </div>
+        {{!-- <!-- updte price --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Update Price" />
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="" />
+          <label class="form-check-label" for="form2Example3">
+            Add to sales que
+          </label>
+        </div>
+        {{!-- <!-- submit button --> --}}
+        <div class="text-center text-lg-start mb-2 p-2">
+          <button type="submit" class="btn btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
+        </div>
+      </form>
+    </div>
