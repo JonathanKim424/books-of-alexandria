@@ -56,12 +56,12 @@
       <form class="delete-form">
         {{!-- <!-- delete by id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" id="delete-id" class="form-control form-control-lg"
             placeholder="Enter Id of Book to Delete from Inventory" />
         </div>
         {{!-- <!-- submit button --> --}}
         <div class="text-center text-lg-start mb-2 p-2">
-          <button type="submit" class="btn btn-lg"
+          <button type="submit" class="btn btn-lg" id="delete-book"
             style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
         </div>
       </form>
@@ -73,17 +73,17 @@
       <form class="edit-form">
         {{!-- <!-- get by id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" id="id-stock" class="form-control form-control-lg"
             placeholder="Enter Id of Book to Update Inventory" />
         </div>
         {{!-- <!-- updte inventory --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" id="new-stock" class="form-control form-control-lg"
             placeholder="Update Inventory" />
         </div>
         {{!-- <!-- submit button --> --}}
         <div class="text-center text-lg-start mb-2 p-2">
-          <button type="submit" class="btn btn-lg"
+          <button type="submit" class="btn btn-lg" id="stock-btn"
             style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
         </div>
       </form>
@@ -95,12 +95,12 @@
       <form class="sales-form">
         {{!-- <!-- get by id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" id="id-price" class="form-control form-control-lg"
             placeholder="Enter Id of Book to Place on Sale" />
         </div>
         {{!-- <!-- updte price --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" id="new-price" class="form-control form-control-lg"
             placeholder="Update Price" />
         </div>
         <div class="form-check">
@@ -111,10 +111,12 @@
         </div>
         {{!-- <!-- submit button --> --}}
         <div class="text-center text-lg-start mb-2 p-2">
-          <button type="submit" class="btn btn-lg"
+          <button type="submit" class="btn btn-lg" id="price-btn"
             style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
         </div>
       </form>
     </div>
 </div>
 <script src="/javascript/add-book.js"></script>
+<script src="/javascript/delete-book.js"></script>
+<script src="/javascript/update-book.js"></script>
