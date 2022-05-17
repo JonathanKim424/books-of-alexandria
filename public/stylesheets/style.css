@@ -42,12 +42,12 @@
    grid-area: stats; 
  }
 
- .infoCard-image {
+ .infoCard-image img {
    grid-area: image;
    /* background: url("../images/alexandria.jpg"); */
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
-   background-size: contain;
+   background-size: cover;
  }
 
  .cardText {
@@ -125,3 +125,15 @@
    100% {background-position: 0% 50%;}
  }
  
+.infoCard-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/* .container {
+  padding: 0px !important;
+} */
+
+.col-sm-auto {
+  padding: 0px !important;
+}

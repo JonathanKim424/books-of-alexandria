@@ -1,0 +1,64 @@
+<div class="container bcontent center mt-5">
+         <h2>
+             Edit Inventory
+         </h2>
+         <button type="button" href="" class="btn btn-primary btn-lg btn-block p-3 m-2">Add Employee</button>
+         <button type="button" href="" class="btn btn-primary btn-lg btn-block p-3 m-2">Delete Employee</button>
+         <button type="button" href="" class="btn btn-primary btn-lg btn-block p-3 m-2">Edit Employee</button>
+     </div>
+
+     {{!-- <!-- add employee form --> --}}
+     <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <form class="addBook-form">
+        <h1 class="text-center">Add Employee</h1>
+        {{!-- <!-- employee name --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="text" id="" class="form-control form-control-lg"
+            placeholder="Enter Employee Name" />
+        </div>
+        {{!-- <!-- employee email --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="text" id="" class="form-control form-control-lg"
+            placeholder="Enter Employee Email" />
+        </div>
+      </form>
+    </div>
+
+    {{!-- <!-- delete employee by id --> --}}
+    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <h1 class="text-center">Delete Employee</h1>
+      <form class="delete-form">
+        {{!-- <!-- delete by id --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Id of Employee" />
+        </div>
+        {{!-- <!-- submit button --> --}}
+        <div class="text-center text-lg-start mb-2 p-2">
+          <button type="submit" class="btn btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    {{!-- <!-- edit employee by id --> --}}
+    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 mx-auto mt-5 border border-3 border-primary rounded">
+      <h1 class="text-center">Edit Employee</h1>
+      <form class="edit-form">
+        {{!-- <!-- get by id --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Enter Id of EMployee" />
+        </div>
+        {{!-- <!-- updte employee email --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" id="" class="form-control form-control-lg"
+            placeholder="Update Employee Email" />
+        </div>
+        {{!-- <!-- submit button --> --}}
+        <div class="text-center text-lg-start mb-2 p-2">
+          <button type="submit" class="btn btn-lg"
+            style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
+        </div>
+      </form>
+    </div>
