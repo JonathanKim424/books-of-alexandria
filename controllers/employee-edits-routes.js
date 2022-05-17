@@ -3,6 +3,11 @@ const withAuth = require('../../tech-blog/utils/auth');
 const sequelize = require('../config/connection');
 const { Book, Genre, Employee } = require('../models');
 
+
+router.get('/', (req, res) => {
+    res.render('employee-edits');
+});
+
 // add book
 router.post('/', /*withAuth,*/ (req, res) => {
     Book.create({
