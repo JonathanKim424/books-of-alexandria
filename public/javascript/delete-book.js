@@ -1,7 +1,7 @@
 async function deleteBookHandler(event) {
     event.preventDefault();
 
-    const delId = document.querySelector('#delete-id').value.trim();
+    const delId = document.querySelector('input[name="delete-id"]').value.trim();
 
     if (delId) {
         const response = await fetch(`api/books/${delId}`, {
@@ -9,11 +9,11 @@ async function deleteBookHandler(event) {
         });
 
         if (response.ok) {
-            console.log('all good');
+            console.log(`deleted book at value ${delId}`);
         } else {
             alert(response.statusText);
         }
     }
 };
 
-document.querySelector('#delete-book').addEventListener('submit', deleteBookHandler);
+document.querySelector('.delete-form').addEventListener('submit', deleteBookHandler);

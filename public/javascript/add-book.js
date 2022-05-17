@@ -1,16 +1,17 @@
 async function addBookHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('#title').value.trim();
-    const author = document.querySelector('#author').value.trim();
-    const isbn = document.querySelector('#isbn').value.trim();
-    const genre = document.querySelector('#genre').value.trim();
-    const price = document.querySelector('#price').value.trim();
+    const book_title = document.querySelector('input[name="title"]').value.trim();
+    const author = document.querySelector('input[name="author"]').value.trim();
+    const isbn = document.querySelector('input[name="isbn"]').value.trim();
+    const genre = document.querySelector('input[name="genre"]').value.trim();
+    const price = document.querySelector('input[name="price"]').value.trim();
+    const stock = document.querySelector('input[name="stock"]').value.trim();
 
-    if (title && author && isbn && genre && price) {
+    if (book_title && author && isbn && genre && price) {
         const response = await fetch('api/books', {
             method: 'POST',
-            body: JSON.stringify({ title, author, isbn, genre, price }),
+            body: JSON.stringify({ book_title, author, isbn, genre, price, stock }),
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -24,4 +25,4 @@ async function addBookHandler(event) {
     }
 };
 
-document.querySelector('#add-book').addEventListener('submit', addBookHandler);
+document.querySelector('.addBook-form').addEventListener('submit', addBookHandler);
