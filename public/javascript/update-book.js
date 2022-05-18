@@ -26,11 +26,19 @@ async function updatePriceHandler(event) {
 
     const priceId = document.querySelector('input[name="id-price"]').value.trim();
     const price = document.querySelector('input[name="new-price"]').value.trim();
+    const check = document.querySelector('input[name="sale"]').checked;
+    let bookSale
+    
+    if (check) {
+        bookSale = { price: price, on_sale: true}
+    } else {
+        bookSale = { price: price, on_sale: false}
+    };
 
     if (priceId && price) {
         const response = await fetch(`api/books/${priceId}`, {
             method: 'PUT',
-            body: JSON.stringify({ price }),
+            body: JSON.stringify(bookSale),
             headers: {
                 'Content-Type': 'application/json'
             }
