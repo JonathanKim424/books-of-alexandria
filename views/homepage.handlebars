@@ -1,43 +1,48 @@
-
 <div class="container">
-    <div class="row">
-        {{!-- search by genre --}}
-         <div class="homeCard rgb col-sm-auto">
-            <div id="" class="homeCard-image">
-                <img src="/images/alexandria.jpg" alt="image of library of alexandria" class="">
-            </div>
-            <div class="HomeCardText">
-                <h2>Search By Genre</h2>
-                <p>search from any genre from sci-fi to non-fiction</p>
-            </div>
-            <div class="homeCard-stats">
-            </div>
+  <div class="row">
+    {{!-- search by genre --}}
+    <div class="homeCard rgb col-sm-auto">
+      <a href="/inventory" style="color: inherit; text-decoration: none">
+        <div id="" class="homeCard-image">
+          <img src="/images/alexandria.jpg" alt="image of library of alexandria" class="">
         </div>
-        {{!-- sort author A-Z --}}
-         <div class="homeCard rgb col-sm-auto">
-            <div id="" class="homeCard-image">
-                <img src="/images/homeCard2.jpg" alt="image of library of alexandria" class="">
-            </div>
-            <div class="HomeCardText">
-                <h2>Sort Authors</h2>
-                <p>sort all authors from a-z</p>
-            </div>
-            <div class="homeCard-stats">
-            </div>
+        <div class="HomeCardText">
+          <h2>Search By Genre</h2>
+          <p>search from any genre from sci-fi to non-fiction</p>
         </div>
-        {{!-- books on sale --}}
-           <div class="homeCard rgb col-sm-auto">
-            <div id="" class="homeCard-image">
-                <img src="/images/homeCard3.jpg" alt="image of library of alexandria" class="">
-            </div>
-            <div class="HomeCardText">
-                <h2>On Sale</h2>
-                <p>view all the books we have on sale!</p>
-            </div>
-            <div class="homeCard-stats">
-            </div>
+        <div class="homeCard-stats">
         </div>
+      </a>
     </div>
+    {{!-- sort author A-Z --}}
+    <div class="homeCard rgb col-sm-auto">
+      <a href="/inventory/byauthorasc" style="color: inherit; text-decoration: none">
+        <div id="" class="homeCard-image">
+          <img src="/images/homeCard2.jpg" alt="image of library of alexandria" class="">
+        </div>
+        <div class="HomeCardText">
+          <h2>Sort Authors</h2>
+          <p>sort all authors from a-z</p>
+        </div>
+        <div class="homeCard-stats">
+        </div>
+      </a>
+    </div>
+    {{!-- books on sale --}}
+    <div class="homeCard rgb col-sm-auto">
+      <a href="inventory/onsale" style="color: inherit; text-decoration: none">
+        <div id="" class="homeCard-image">
+          <img src="/images/homeCard3.jpg" alt="image of library of alexandria" class="">
+        </div>
+        <div class="HomeCardText">
+          <h2>On Sale</h2>
+          <p>view all the books we have on sale!</p>
+        </div>
+        <div class="homeCard-stats">
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
 
 <!-- Carousel -->
@@ -49,7 +54,7 @@
     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
   </div>
-  
+
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -62,7 +67,7 @@
       <img src="/images/carousel4.jpg" alt="New York" class="d-block" style="width:100%">
     </div>
   </div>
-  
+
   <!-- Left and right controls/icons -->
   <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -71,4 +76,3 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-

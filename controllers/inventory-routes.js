@@ -14,7 +14,10 @@ router.get('/', (req, res) => {
     })
     .then(dbBookData => {
         const books = dbBookData.map(book => book.get({ plain: true }));
-        res.render('inventory', { books });
+        res.render('inventory', { 
+            books,
+            loggedIn: req.session.loggedIn
+        });
     })
     .catch(err => {
         console.log(err);
@@ -36,7 +39,10 @@ router.get('/bygenre/:id', (req, res) => {
     })
     .then(dbBookData => {
         const books = dbBookData.map(book => book.get({ plain: true }));
-        res.render('inventory', { books });
+        res.render('inventory', {
+            books,
+            loggedIn: req.session.loggedIn
+        });
     })
     .catch(err => {
         console.log(err);
@@ -58,7 +64,10 @@ router.get('/byauthordesc', (req, res) => {
     })
     .then(dbBookData => {
         const books = dbBookData.map(book => book.get({ plain: true }));
-        res.render('inventory', { books });
+        res.render('inventory', {
+            books,
+            loggedIn: req.session.loggedIn
+        });
     })
     .catch(err => {
         console.log(err);
@@ -80,7 +89,10 @@ router.get('/byauthorasc', (req, res) => {
     })
     .then(dbBookData => {
         const books = dbBookData.map(book => book.get({ plain: true }));
-        res.render('inventory', { books });
+        res.render('inventory', {
+            books,
+            loggedIn: req.session.loggedIn
+        });
     })
     .catch(err => {
         console.log(err);
@@ -102,7 +114,10 @@ router.get('/onsale', (req, res) => {
     })
     .then(dbBookData => {
         const books = dbBookData.map(book => book.get({ plain: true }));
-        res.render('inventory', { books });
+        res.render('inventory', {
+            books,
+            loggedIn: req.session.loggedIn
+        });
     })
     .catch(err => {
         console.log(err);
