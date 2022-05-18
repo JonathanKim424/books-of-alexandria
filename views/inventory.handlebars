@@ -3,7 +3,22 @@
     <h2 class="">
         Edit Search
     </h2>
-    <button type="button" id="searchGenre" class="btn btn-primary btn-lg btn-block p-3 m-2">By Genre</button>
+    <div class="dropdown">
+  <button class="btn btn-primary btn-lg btn-block p-3 m-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    By Genre
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Romance</a>
+    <a class="dropdown-item" href="#">Horror</a>
+    <a class="dropdown-item" href="#">History</a>
+    <a class="dropdown-item" href="#">Biography</a>
+    <a class="dropdown-item" href="#">Classics</a>
+    <a class="dropdown-item" href="#">Educational</a>
+    <a class="dropdown-item" href="#">Children's</a>
+    <a class="dropdown-item" href="#">Comedy</a>
+    <a class="dropdown-item" href="#">Novel</a>
+  </div>
+</div>
     <a href="/inventory/byauthordesc"><button type="button" id="searchAuthor" class="btn btn-primary btn-lg btn-block p-3 m-2">By Author: Descending</button></a>
     <a href="/inventory/byauthorasc"><button type="button" id="searchAuthor" class="btn btn-primary btn-lg btn-block p-3 m-2">By Author: Ascending</button></a>
     <a href="/inventory/onsale"><button type="button" id="searchOnSale" class="btn btn-primary btn-lg btn-block p-3 m-2">On Sale</button></a>
