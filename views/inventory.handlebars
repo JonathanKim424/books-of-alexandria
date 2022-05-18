@@ -3,34 +3,45 @@
     <h2 class="">
         Edit Search
     </h2>
-    <div class="dropdown">
-  <button class="btn btn-primary btn-lg btn-block p-3 m-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    By Genre
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Romance</a>
-    <a class="dropdown-item" href="#">Horror</a>
-    <a class="dropdown-item" href="#">History</a>
-    <a class="dropdown-item" href="#">Biography</a>
-    <a class="dropdown-item" href="#">Classics</a>
-    <a class="dropdown-item" href="#">Educational</a>
-    <a class="dropdown-item" href="#">Children's</a>
-    <a class="dropdown-item" href="#">Comedy</a>
-    <a class="dropdown-item" href="#">Novel</a>
-  </div>
-</div>
-    <a href="/inventory/byauthordesc"><button type="button" id="searchAuthor" class="btn btn-primary btn-lg btn-block p-3 m-2">By Author: Descending</button></a>
-    <a href="/inventory/byauthorasc"><button type="button" id="searchAuthor" class="btn btn-primary btn-lg btn-block p-3 m-2">By Author: Ascending</button></a>
-    <a href="/inventory/onsale"><button type="button" id="searchOnSale" class="btn btn-primary btn-lg btn-block p-3 m-2">On Sale</button></a>
+    <div class="row">
+        <div class="col-2">
+            <a href="/inventory"><button type="button" class="btn btn-primary btn-lg btn-block p-3 m-2">All</button></a>
+        </div>
+        <div class="dropdown col-2">
+            <button class="btn btn-primary btn-lg btn-block p-3 m-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                By Genre
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/inventory/bygenre/1">Sci-Fi/Fantasy</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/2">Romance</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/3">Horror</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/4">History</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/5">Biography</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/6">Classics</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/7">Educational</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/8">Children's</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/9">Comedy</a></li>
+                <li><a class="dropdown-item" href="/inventory/bygenre/10">Novel</a></li>
+        </div>
+        <div class="col-3">
+            <a href="/inventory/byauthordesc"><button type="button" class="btn btn-primary btn-lg btn-block p-3 m-2">By Author: Descending</button></a>
+        </div>
+        <div class="col-3">
+            <a href="/inventory/byauthorasc"><button type="button" class="btn btn-primary btn-lg btn-block p-3 m-2">By Author: Ascending</button></a>
+        </div>
+        <div class="col-2">
+            <a href="/inventory/onsale"><button type="button" class="btn btn-primary btn-lg btn-block p-3 m-2">On Sale</button></a>
+        </div>
+    </div>
 </div>
 
 
 <!-- book cards -->
 <div class="container">
-   <div class="row">
+    {{#if books.length}}
+    <div class="row">
         {{#each books}}
         <div class="infoCard rgb col-sm-auto">
-            
             <div id="bookImage" class="infoCard-image">
                 <img src="{{this.book_img}}" class="book-image" alt="image of book">
             </div>
@@ -53,6 +64,11 @@
                 </div>
             </div>
         </div>
-    {{/each}}
+        {{/each}}
    </div>
+   {{else}}
+   <div class="mt-4">
+       <h3 class="text-center">No books found.</h3>
+   </div>
+   {{/if}}
 </div>
