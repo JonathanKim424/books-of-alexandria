@@ -48,7 +48,8 @@ router.post('/', /*withAuth,*/ (req, res) => {
             isbn: req.body.isbn,
             genre_id: req.body.genre_id,
             price: req.body.price,
-            stock: req.body.stock
+            stock: req.body.stock,
+            book_img: req.body.book_img
         })
         .then(dbBookData => res.json(dbBookData))
         .catch(err => {
