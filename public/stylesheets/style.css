@@ -212,7 +212,7 @@ body{
   margin:30px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  text-align: justify;
+  text-align: center;
 }
 
 .homeCard-image {
@@ -225,7 +225,7 @@ body{
   grid-area: stats; 
 }
 
-.infoCard-image img {
+.homeCard-image img {
   grid-area: image;
   /* background: url("../images/alexandria.jpg"); */
   border-top-left-radius: 15px;
@@ -242,43 +242,16 @@ body{
   font-size:28px;
 }
 
-.cardText p {
+.homeCardText p {
   margin-top:0px;
   font-size:28px;
 }
 
-.infoCard-stats {
-  grid-area: stats; 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: rgb(7, 173, 238);
-}
-
-.infoCard-stats .infoStat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  color: white;
-  padding:10px;
-}
-
-.infoBorder {
-   border-left: solid;
-   border-right: solid;
-   border-color: gold;
-}
-
-.infoCard:hover {
+.homeCard:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
-.infoCard-image img {
+.homeCard-image img {
   object-fit: cover;
   height: 100%;
   width: 100%;
