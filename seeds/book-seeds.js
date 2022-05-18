@@ -8,7 +8,8 @@ const bookData = [
         genre_id: [1],
         price: 9.99,
         stock: 10,
-        book_img: "https://images-na.ssl-images-amazon.com/images/I/51sdWhtHOwL.jpg"
+        book_img: "https://images-na.ssl-images-amazon.com/images/I/51sdWhtHOwL.jpg",
+        onSale: false
     },
     {
         book_title: 'A Brief History of Time',
@@ -17,7 +18,8 @@ const bookData = [
         genre_id: [7],
         price: 9.99,
         stock: 10,
-        book_img: "https://images-na.ssl-images-amazon.com/images/I/A1xkFZX5k-L.jpg"
+        book_img: "https://images-na.ssl-images-amazon.com/images/I/A1xkFZX5k-L.jpg",
+        onSale: false
     },
     {
         book_title: 'Dune',
@@ -26,7 +28,8 @@ const bookData = [
         genre_id: [1],
         price: 14.99,
         stock: 10,
-        book_img: 'https://images-na.ssl-images-amazon.com/images/I/91OoNH1+MHL.jpg'
+        book_img: 'https://images-na.ssl-images-amazon.com/images/I/91OoNH1+MHL.jpg',
+        onSale: true
     },
     {
         book_title: 'Fahrenheit 451',
@@ -35,7 +38,8 @@ const bookData = [
         genre_id: [1],
         price: 9.99,
         stock: 10,
-        book_img: 'https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg'
+        book_img: 'https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg',
+        onSale: true
     },
     {
         book_title: 'The Road',
@@ -44,7 +48,8 @@ const bookData = [
         genre_id: [1],
         price: 14.99,
         stock: 10,
-        book_img: 'https://images-na.ssl-images-amazon.com/images/I/71IJ1HC2a3L.jpg'
+        book_img: 'https://images-na.ssl-images-amazon.com/images/I/71IJ1HC2a3L.jpg',
+        onSale: false
     }
 ];
 
