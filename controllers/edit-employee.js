@@ -1,11 +1,10 @@
 const router = require('express').Router();
-const withAuth = require('../../tech-blog/utils/auth');
 const sequelize = require('../config/connection');
 const { Book, Genre, Employee } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
-    res.render('employee-edits', {
+    res.render('edit-employee', {
         loggedIn: req.session.loggedIn
     });
 });

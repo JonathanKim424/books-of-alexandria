@@ -30,9 +30,9 @@ async function updatePriceHandler(event) {
     let bookSale
     
     if (check) {
-        bookSale = { price: price, on_sale: true}
+        bookSale = { price: price, onSale: true}
     } else {
-        bookSale = { price: price, on_sale: false}
+        bookSale = { price: price, onSale: false}
     };
 
     if (priceId && price) {
@@ -45,7 +45,7 @@ async function updatePriceHandler(event) {
         });
 
         if (response.ok) {
-            console.log(`updated stock for id ${priceId} to ${price}`);
+            console.log(`updated price for id ${priceId} to ${price}`);
         } else {
             alert(response.statusText);
         }

@@ -56,8 +56,9 @@ Book.init(
             type: DataTypes.STRING,
             allowNull: true
         },
-        on_sale: {
+        onSale: {
             type: DataTypes.BOOLEAN,
+            allowNull: false,
             defaultValue: false
         }
     },
