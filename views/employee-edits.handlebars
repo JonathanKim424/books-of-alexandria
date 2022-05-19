@@ -14,37 +14,42 @@
         <h1 class="text-center">Add Book To Inventory</h1>
         {{!-- <!-- add book title --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="text" id="" class="form-control form-control-lg"
+          <input type="text" name="title" class="form-control form-control-lg"
             placeholder="Enter Title of Book" />
         </div>
         {{!-- <!-- add author --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="text" id="" class="form-control form-control-lg"
+          <input type="text" name="author" class="form-control form-control-lg"
             placeholder="Enter Author" />
         </div>
         {{!-- <!-- add isbn --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="text" id="" class="form-control form-control-lg"
+          <input type="text" name="isbn" class="form-control form-control-lg"
             placeholder="isbn" />
         </div>
         {{!-- <!-- add genre id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="genre" class="form-control form-control-lg"
             placeholder="Enter Genre Id" />
         </div>
         {{!-- <!-- add price --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="price" class="form-control form-control-lg"
             placeholder="Enter Price" />
+        </div>
+        {{!-- <!-- add stock --> --}}
+        <div class="form-outline mb-2 p-2">
+          <input type="number" name="stock" class="form-control form-control-lg"
+            placeholder="Enter Stock" />
         </div>
         {{!-- <!-- Add book image --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="file" id="" class="form-control form-control-lg"
-            placeholder="Enter image file path" />
+          <input type="text" name="url" class="form-control form-control-lg"
+            placeholder="Enter image URL" />
         </div>
         {{!-- <!-- submit button --> --}}
         <div class="text-center text-lg-start mt-4 pt-2 pb-2">
-          <button type="submit" class="btn btn-lg"
+          <button type="submit" class="btn btn-lg" id="add-book"
             style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
         </div>
       </form>
@@ -56,12 +61,12 @@
       <form class="delete-form">
         {{!-- <!-- delete by id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="delete-id" class="form-control form-control-lg"
             placeholder="Enter Id of Book to Delete from Inventory" />
         </div>
         {{!-- <!-- submit button --> --}}
         <div class="text-center text-lg-start mb-2 p-2">
-          <button type="submit" class="btn btn-lg"
+          <button type="submit" class="btn btn-lg" id="delete-book"
             style="padding-left: 2.5rem; padding-right: 2.5rem; background-color: #9BB1ED;">Submit</button>
         </div>
       </form>
@@ -73,12 +78,12 @@
       <form class="edit-form">
         {{!-- <!-- get by id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="id-stock" class="form-control form-control-lg"
             placeholder="Enter Id of Book to Update Inventory" />
         </div>
         {{!-- <!-- updte inventory --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="new-stock" class="form-control form-control-lg"
             placeholder="Update Inventory" />
         </div>
         {{!-- <!-- submit button --> --}}
@@ -95,16 +100,16 @@
       <form class="sales-form">
         {{!-- <!-- get by id --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="id-price" class="form-control form-control-lg"
             placeholder="Enter Id of Book to Place on Sale" />
         </div>
         {{!-- <!-- updte price --> --}}
         <div class="form-outline mb-2 p-2">
-          <input type="number" id="" class="form-control form-control-lg"
+          <input type="number" name="new-price" class="form-control form-control-lg"
             placeholder="Update Price" />
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="" />
+          <input class="form-check-input" type="checkbox" value="" name="sale" />
           <label class="form-check-label" for="form2Example3">
             Add to sales que
           </label>
@@ -116,3 +121,7 @@
         </div>
       </form>
     </div>
+</div>
+<script src="/javascript/add-book.js"></script>
+<script src="/javascript/delete-book.js"></script>
+<script src="/javascript/update-book.js"></script>

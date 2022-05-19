@@ -199,11 +199,11 @@ body{
   width: fit-content;
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: 210px 210px 20px;
+  grid-template-rows: 200px 210px 20px;
   grid-template-areas: "image" "text" "stats";
   border-radius: 18px;
-  background: #1d1d1d;
-  color: white;
+  background: #34477D;
+  color: gold;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
@@ -212,7 +212,6 @@ body{
   margin:30px;
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  text-align: justify;
 }
 
 .homeCard-image {
@@ -225,61 +224,22 @@ body{
   grid-area: stats; 
 }
 
-.infoCard-image img {
+.homeCard-image img {
   grid-area: image;
   /* background: url("../images/alexandria.jpg"); */
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
-}
-
-.cardText {
-  grid-area: text;
-  margin: 25px;
-}
-.cardText h2 {
-  margin-top:0px;
-  font-size:28px;
-}
-
-.cardText p {
-  margin-top:0px;
-  font-size:28px;
-}
-
-.infoCard-stats {
-  grid-area: stats; 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background: rgb(7, 173, 238);
-}
-
-.infoCard-stats .infoStat {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  color: white;
-  padding:10px;
-}
-
-.infoBorder {
-   border-left: solid;
-   border-right: solid;
-   border-color: gold;
-}
-
-.infoCard:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-}
-.infoCard-image img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.homeCard:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+#homeCard-text {
+  padding: auto ;
 }

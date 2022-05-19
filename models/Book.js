@@ -55,6 +55,11 @@ Book.init(
         book_img: {
             type: DataTypes.STRING,
             allowNull: true
+        },
+        onSale: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+            defaultValue: false
         }
     },
     {
