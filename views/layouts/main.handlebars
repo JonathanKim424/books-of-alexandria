@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="icon" type="image/x-icon" href="/images/alexandriaLogo-circle.png">
     <title>Books of Alexandria</title>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  const options = {
+  label: '🌓', // default: ''
+}
+  function addDarkmodeWidget() {
+    new Darkmode(options).showWidget();
+    
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+
+
+</script>
 </head>
 
 <body>
@@ -61,7 +74,7 @@
     {{!-- jumbotron --}}
 <div
  class="bg-image p-5 text-center shadow-1-strong mb-1 text-white"
- style="background-image: url('/images/hero3.jpg');">
+ style="background-image: url('/images/hero3.jpg'); isolation: isolate;">
  
   <section class="hero-text">
     <h1 class="mb-2 h1 hero-text">Books of Alexandria</h1>
@@ -75,7 +88,7 @@
         {{{ body }}}
     </main>
     
-    <div class="text-center text-md-start py-4 px-4 px-xl-5 text-light bg-gradient mt-5" style="background-color: #243873;">
+    <div class="text-center text-md-start py-4 px-4 px-xl-5 text-light bg-gradient mt-5" style="background-color: #243873; isolation: isolate; ">
         <!-- Copyright -->
         <div class="text-white mb-3 mb-md-0 .bg-primary.bg-gradient">
             Copyright © 2022. All rights reserved.
