@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const withAuth = require('../../tech-blog/utils/auth');
 const sequelize = require('../config/connection');
 const { Book, Genre, Employee } = require('../models');
 const withAuth = require('../utils/auth');
