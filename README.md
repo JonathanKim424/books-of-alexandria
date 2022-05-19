@@ -24,7 +24,7 @@ If the application is going to be accessed on Heroku, use the below link to acce
 
 ![Application Screenshot](./assets/images/application-screenshot.jpg?raw=tru "Application Screenshot")
 
-Heroku Link:
+Heroku Link: https://cryptic-taiga-66100.herokuapp.com/
 
 ## Tests
 There are no tests for this application.
