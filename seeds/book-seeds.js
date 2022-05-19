@@ -153,7 +153,7 @@ const bookData = [
     },
     {
         book_title: 'Hidden Pictures',
-        author: ' Jason Rekulak ',
+        author: 'Jason Rekulak ',
         isbn: '11615632',
         genre_id: [3],
         price: 17.63,
@@ -273,7 +273,7 @@ const bookData = [
     },
     {
         book_title: 'War and Peace',
-        author: ' Leo Tolstoy ',
+        author: 'Leo Tolstoy ',
         isbn: '123585',
         genre_id: [5],
         price: 17.99,
@@ -363,7 +363,7 @@ const bookData = [
     },
     {
         book_title: 'The Picture of Dorian Gray',
-        author: ' Oscar Wilde, Tony Walker, et al.',
+        author: 'Oscar Wilde, Tony Walker, et al.',
         isbn: '421651',
         genre_id: [6],
         price: 8.99,
@@ -383,7 +383,7 @@ const bookData = [
     },
     {
         book_title: `Carmilla`,
-        author: ' Joseph Sheridan Lefanu and Carmen Maria Machado',
+        author: 'Joseph Sheridan Lefanu and Carmen Maria Machado',
         isbn: '81312',
         genre_id: [6],
         price: 12.99,
@@ -403,7 +403,7 @@ const bookData = [
     },
     {
         book_title: `The Price of Salt`,
-        author: ' Patricia Highsmith ',
+        author: 'Patricia Highsmith ',
         isbn: '465456',
         genre_id: [6],
         price: 5.95,
@@ -493,7 +493,7 @@ const bookData = [
     },
     {
         book_title: 'Qualitative Research: A Guide to Design and Implementation',
-        author: ' Sharan B. Merriam and Elizabeth J. Tisdell',
+        author: 'Sharan B. Merriam and Elizabeth J. Tisdell',
         isbn: '789546',
         genre_id: [7],
         price: 40.00,
@@ -713,7 +713,7 @@ const bookData = [
     },
     {
         book_title: 'Dreamland: A Novel',
-        author: ' Nicholas Sparks',
+        author: 'Nicholas Sparks',
         isbn: '1354215',
         genre_id: [2],
         price: 10.99,
@@ -803,7 +803,7 @@ const bookData = [
     },
     {
         book_title: 'Sea of Tranquility',
-        author: ' Emily St. John Mandel, John Lee, et al.',
+        author: 'Emily St. John Mandel, John Lee, et al.',
         isbn: '4563215',
         genre_id: [1],
         price: 11.99,
